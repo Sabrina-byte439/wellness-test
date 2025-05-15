@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wellness Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #111;
+      color: limegreen;
+      text-align: center;
+      padding: 20px;
+    }
+
+    main {
+      padding: 20px;
+      margin-bottom: 80px; /* Space for the fixed footer */
+    }
+
+    footer {
+      background-color: #111;
+      color: seagreen;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      margin-right: 10px;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Wellness Website</h1>
+  </header>
+
+  <main>
+    <h2>About Wellness</h2>
+    <p>It is a neverending journey made of several elements and this website can guide you on this journey</p>
+
+    <h3>How to navigate this website?</h3>
+    <p>Pick the area you want to focus on below and book your first consultation!</p>
+
+    <button id="talkBtn">Speak to a coach or a therapist</button>
+
+    <script>
+      document.getElementById("talkBtn").addEventListener("click", function () {
+        window.location.href = "https://www.google.com/search?q=book+a+coach+or+therapist+session";
+      });
+    </script>
+
+    <br><br>
+    <a href="yoga.html" class="btn">Book a yoga session</a>
+    <a href="cook.html" class="btn">Learn how to cook nutritious food</a>
+    <a href="retreat.html" class="btn">Book a retreat</a>
+  </main>
+
+  <footer>
+    <p>Made with care!</p>
+  </footer>
+
+</body>
+</html>

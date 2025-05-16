@@ -82,7 +82,8 @@
 
     <br><br>
     <a href="yoga.html" class="btn">Book a yoga session</a>
-    amplitude.getInstance().logEvent('Yoga Booking Started');
+     document.getElementById("talkBtn").addEventListener("click", function () {
+    amplitude.getInstance().logEvent('Yoga Booking Started')  });
     <a href="cook.html" class="btn">Learn how to cook nutritious food</a>
     <a href="retreat.html" class="btn">Book a retreat</a>
   </main>
